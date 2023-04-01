@@ -1,0 +1,305 @@
+/* Tablet */
+
+@media (max-width:1199px) {
+
+    .container {
+        width: 900px;
+    }
+
+    .header-top {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .header-nav-button {
+        display: block;
+    }
+
+    .header-nav-button.active {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .header-nav-button.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .header-nav-button.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .header-nav-button.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .header-nav-list {
+        display: none;
+    }
+
+    .header-inner.active {
+        height: 500px;
+        display: flex;
+        align-items: flex-start;
+        background: #000;
+    }
+
+    .header-top.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-nav-list.active {
+        margin-top: 50px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-nav-list.active li {
+        margin-bottom: 30px;
+        margin-right: 0;
+    }
+
+    /* Main */
+
+    .inner-page {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .inner-page-tours-header {
+        margin-bottom: 40px;
+    }
+
+    .main-header {
+        font-size: 50px;
+    }
+
+    .card {
+        /* width: 420px; */
+        width: 100%;
+    }
+
+    .card.bigger {
+        /* width: 495px; */
+        width: 100%;
+    }
+    
+    .card.small {
+        /* width: 345px; */
+        width: 100%;
+    }
+
+    .card-title-wrapper {
+        height: 60px;
+    }
+
+    .card-title {
+        font-size: 24px;
+    }
+
+    /* Footer */
+
+    .footer {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .footer-widget-services {
+        display: none;
+    }
+
+    .footer-logo {
+        margin-bottom: 20px;
+    }
+
+    .footer-logo .logo {
+        font-size: 30px;
+    }
+
+    .footer-copyright p {
+        font-size: 14px;
+    }
+
+    .footer-widget-title {
+        margin-bottom: 20px;
+    }
+}
+
+/* Mobile */
+
+@media (max-width:899px) {
+
+    .container {
+        width: 600px;
+        /* width: 100%; */
+    }
+
+    .header-top {
+        width: 100%;
+    }
+
+    .header-inner {
+        height:80px;
+    }
+    
+    .logo {
+        font-size: 30px;
+    }
+
+    .header-content {
+        width: 100%;
+    }
+
+
+    /* Main */
+
+    .inner-page {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .main-header {
+        font-size: 42px;
+    }
+
+    .cards-first-row {
+        margin-bottom: 0;
+    }
+
+    .cards-first-row, .cards-second-row {
+        flex-direction: column;
+    }
+
+    .cards-first-row > * + * {
+        margin-top: 30px;
+    }
+
+    .cards-second-row-column > * {
+        margin-top: 30px;
+    }
+
+     /* Footer */
+
+     .footer {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .footer-row {
+        flex-wrap: wrap;
+    }
+
+    .footer-copyright {
+        order: 1;
+        width: auto;
+    }
+
+    .footer-widgets-wrapper {
+        margin-bottom: 50px;
+        padding-top: 0;
+        width: 100%;
+    }
+
+    .footer-widgets-wrapper > * {
+        width: calc(50%  - 15px);
+    }
+}
+
+/* Mobile XS */
+
+@media (max-width:599px) {
+
+    .container {
+        width: 320px;
+    }
+
+    .header-top {
+        width: 100%;
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+
+      /* Main */
+
+      .inner-page-tours-header {
+        margin-bottom: 30px;
+    }
+
+    .main-header {
+        font-size: 28px;
+        line-height: 1;
+    }
+
+    .card-title-wrapper {
+        height: 50px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .cards-first-row > * + * {
+        margin-top: 20px;
+    }
+
+    .cards-second-row-column > * {
+        margin-top: 20px;
+    }
+
+    /* Footer */
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer-row {
+        flex-direction: column;
+    }
+
+    .footer-widgets-wrapper {
+        margin-bottom: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-widget-services {
+        display: block;
+    }
+
+    .footer-widget-contacts {
+        font-size: 16px;
+    }
+
+    .footer-widget {
+        margin-bottom: 40px;
+    }
+
+    .footer-widget + .footer-widget {
+        margin-left: 0;
+    }
+
+    .footer-widgets-wrapper > * {
+        width: 100%;
+    }
+
+    .footer-widget-title {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .footer-widget-list {
+        font-size: 16px;
+    }
+
+    .footer-widget-list li {
+        margin-bottom: 10px;
+    }
+}
